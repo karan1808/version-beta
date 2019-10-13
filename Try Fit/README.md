@@ -1,4 +1,5 @@
 # [Try Fit]
+### A virtual fitting room service!
 
 <p float="left">
   <img src="inputs/example_person.jpg" width="256" hspace="20"/>
@@ -12,7 +13,7 @@
   * [Test Example](#test-example)
 * [Notebooks](#notebooks)
 * [References](#references)
-  
+
 ## Requisites
 
 * [Conda](https://conda.io/docs/user-guide/install/index.html)
@@ -22,11 +23,13 @@
 ## Setup
 
 First clone the repository:
+
 Next, run `source setup.sh`, which will create a conda environment and install the required packages via
 ```
 conda create --name smartfit python=2.7 pip
 source activate smartfit
 pip install -r requirements.txt
+```
 
 ### Test Example
 
@@ -38,7 +41,7 @@ The corresponding output is `output/output.png` and should be similar to `output
 
 ## Notebooks
 
-This repo includes some jupyter notebooks (located in `notebooks/`) that may be useful for understanding the Try Fit pipeline and its inputs/outputs. Exact usage instructions are at the top of each notebook.
+This repo includes some jupyter notebooks (located in `notebooks/`) that may be useful for understanding the SmartFit pipeline and its inputs/outputs. Exact usage instructions are at the top of each notebook.
 
 * `visualize_inputs.ipynb`
   * Explains and shows the main inputs to the clothing transfer model: body mask, face and pants, keypoint pose map, and clothing item.
