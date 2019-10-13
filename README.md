@@ -4,7 +4,7 @@ This is an project  for hackthon version beta from error_404
 ### A virtual fitting room service!
 
 <p float="left">
-  <img src="inputs/example_person.jpg" width="256" hspace="20"/>
+  <img src="Try Fit/inputs/example_person.jpg" width="256" hspace="20"/>
   <img src="inputs/example_clothing.jpg" width="256" hspace="20"/> 
   <img src="output/example_output.png" width="256"/> 
 </p>
