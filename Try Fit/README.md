@@ -1,5 +1,4 @@
-# [SmartFit](https://docs.google.com/presentation/d/146ZfU9597FB8AG4J9jFxlkXjaEJga5XEbI_EbsG0Jxw/present#slide=id.gc6f80d1ff_0_0)
-### A virtual fitting room service for e-commerce!
+# [Try Fit]
 
 <p float="left">
   <img src="inputs/example_person.jpg" width="256" hspace="20"/>
@@ -13,10 +12,6 @@
   * [Test Example](#test-example)
 * [Notebooks](#notebooks)
 * [References](#references)
-
-## Important Note
-
-This repository is for demo purposes only and runs a publicly available clothing transfer model, which does not include all improvements. Correspondingly, some functionality may be missing.
   
 ## Requisites
 
@@ -27,18 +22,11 @@ This repository is for demo purposes only and runs a publicly available clothing
 ## Setup
 
 First clone the repository:
-```
-git clone https://github.com/RohanBhandari/SmartFit.git
-cd SmartFit
-```
-
 Next, run `source setup.sh`, which will create a conda environment and install the required packages via
 ```
 conda create --name smartfit python=2.7 pip
 source activate smartfit
 pip install -r requirements.txt
-```
-Additionally, `setup.sh` will clone and setup auxiliary repositories that do the [human parsing](https://github.com/RohanBhandari/LIP_JPPNet.git), [pose estimation](https://github.com/RohanBhandari/keras_Realtime_Multi-Person_Pose_Estimation), and [clothing transfer](https://github.com/RohanBhandari/VITON/tree/f8427292e653df9ecb09a1413cfc4e0575a34469) steps. This process will download pre-trained models for each of the tasks.
 
 ### Test Example
 
@@ -50,7 +38,7 @@ The corresponding output is `output/output.png` and should be similar to `output
 
 ## Notebooks
 
-This repo includes some jupyter notebooks (located in `notebooks/`) that may be useful for understanding the SmartFit pipeline and its inputs/outputs. Exact usage instructions are at the top of each notebook.
+This repo includes some jupyter notebooks (located in `notebooks/`) that may be useful for understanding the Try Fit pipeline and its inputs/outputs. Exact usage instructions are at the top of each notebook.
 
 * `visualize_inputs.ipynb`
   * Explains and shows the main inputs to the clothing transfer model: body mask, face and pants, keypoint pose map, and clothing item.
